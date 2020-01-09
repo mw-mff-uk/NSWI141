@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Milan Wikarski" />
+    <title>Linear Regression | Machine Learning</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav id="nav">
+        <h4>Machine Learning</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="linear-regression.html">Linear Regression</a></li>
+          <li><a href="logistic-regression.html">Logistic Regression</a></li>
+        </ul>
+      </nav>
+      <main id="content">
+        <header>
+          <h1>Linear Regression</h1>
+
+          <section>
+            <header>
+              <h2>Main Idea</h2>
+            </header>
+            <p>
+              Linear regression is a linear approach to modeling the
+              relationship between a scalar response (or dependent variable) and
+              one or more explanatory variables (or independent variables). The
+              case of one explanatory variable is called simple linear
+              regression. For more than one explanatory variable, the process is
+              called multiple linear regression. This term is distinct from
+              multivariate linear regression, where multiple correlated
+              dependent variables are predicted, rather than a single scalar
+              variable.
+            </p>
+          </section>
+
+          <section>
+            <header>
+              <h2>Optimization</h2>
+            </header>
+            <p>
+              The goal in creating a linear regression model is to find the best
+              parameters &theta;<sub>0</sub>, &theta;<sub>1</sub>, ...,
+              &theta;<sub>m</sub>. Different values of &theta; are compared
+              using the sum of residual squares (RSS). The parameters which
+              produce the smallest value of RSS are considered to be the best.
+              This is called Least Squares method. It is computationally very
+              easy to estimate these parameters almost perfectly using the
+              Gradient Descent Algorithm.
+              <img src="linear-regression.png" alt="Residual Sum of Squares" />
+            </p>
+          </section>
+
+          <section>
+            <header>
+              <h2>Polynomial regression</h2>
+            </header>
+            <p>
+              Polynomial regression is an extension of linear regression where
+              the relationship between features and target value is modelled as
+              ad-th order polynomial.
+            </p>
+            <p>
+              The amazing thing about polynomial regression with d-th order
+              polynomial is that it is the same thing as linear regression in
+              extended feature space with features A<sup>1</sup>, A<sup>2</sup>,
+              ..., A<sup>m</sup>
+            </p>
+            <img src="polynomial-regression.png" alt="Polynomial Regression" />
+          </section>
+        </header>
+      </main>
+      <footer id="footer">
+        <p>&copy;2020 | Milan Wikarski</p>
+      </footer>
+    </div>
+  </body>
+</html>

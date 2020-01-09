@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Milan Wikarski" />
+    <title>Logistic Regression | Machine Learning</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav id="nav">
+        <h4>Machine Learning</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="linear-regression.html">Linear Regression</a></li>
+          <li><a href="logistic-regression.html">Logistic Regression</a></li>
+        </ul>
+      </nav>
+      <main id="content">
+        <header>
+          <h1>Logistic Regression</h1>
+        </header>
+
+        <section>
+          <h2>Main Idea</h2>
+          <p>
+            Logistic regression is a statistical model that in its basic form
+            uses a logistic function to model a binary dependent variable,
+            although many more complex extensions exist. In regression analysis,
+            logistic regression (or logit regression) is estimating the
+            parameters of a logistic model (a form of binary regression).
+          </p>
+        </section>
+
+        <section>
+          <h2>Logistic Function</h2>
+          <p>
+            The target hypothesis f for a binary classification has the form of
+            sigmoid function:
+          </p>
+          <img src="sigmoid.png" alt="Sigmoid Function" />
+        </section>
+
+        <section>
+          <h2>Hyperplane</h2>
+          <p>
+            Logistic regression creates a linear hyperplane which divides the
+            feature space into two parts. Classification is the based upon which
+            part the example is in.
+          </p>
+          <p>
+            This also shows the problem of linear regression: it fails when
+            there is no linear decision boundary.
+          </p>
+          <img src="logistic-regression.png" alt="Decision Boundary" />
+        </section>
+
+        <section>
+          <h2>Optimization</h2>
+          <p>
+            The goal in creating a logistic regression model is to find the best
+            parameters &theta;<sub>0</sub>, &theta;<sub>1</sub>, ...,
+            &theta;<sub>m</sub>. Different values of &theta; are compared using
+            the Loss Function (L). The parameters which produce the smallest
+            value of Loss Function (L) are considered to be the best:
+          </p>
+          <img src="loss.png" alt="Loss Function" />
+        </section>
+      </main>
+      <footer id="footer">
+        <p>&copy;2020 | Milan Wikarski</p>
+      </footer>
+    </div>
+  </body>
+</html>
